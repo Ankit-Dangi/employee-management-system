@@ -1,4 +1,4 @@
-package Repository;
+package com.company.employee_management_system.repository;
 
 
 

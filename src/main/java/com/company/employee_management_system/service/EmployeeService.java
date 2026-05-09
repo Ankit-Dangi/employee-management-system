@@ -1,5 +1,4 @@
-package com.company.employee_management_system.entity.Service;
-
+package com.company.employee_management_system.service;
 
 
 
@@ -8,7 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.company.employee_management_system.entity.employee;
-import Repository.repository;
+import com.company.employee_management_system.repository.repository;
 
 @Service
 public class EmployeeService {

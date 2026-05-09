@@ -1,4 +1,4 @@
-package Controller;
+package com.company.employee_management_system.controller;
 
 
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.company.employee_management_system.entity.employee;
-import  Service.EmployeeService;
+import com.company.employee_management_system.service.EmployeeService;
 
 @RestController
 @RequestMapping("/employees")
