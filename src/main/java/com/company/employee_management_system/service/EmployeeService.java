@@ -33,4 +33,23 @@ public class EmployeeService {
 
         return repository.findById(id).orElse(null);
     }
+// Update Employee
+public employee updateEmployee(Long id, employee updatedEmployee) {
+
+    employee existingEmployee = repository.findById(id).orElse(null);
+
+    if (existingEmployee != null) {
+
+        existingEmployee.setName(updatedEmployee.getName());
+        existingEmployee.setEmail(updatedEmployee.getEmail());
+        existingEmployee.setDepartment(updatedEmployee.getDepartment());
+        existingEmployee.setSalary(updatedEmployee.getSalary());
+
+        return repository.save(existingEmployee);
+    }
+
+    return null;
+}
+    
+
 }
