@@ -3,6 +3,7 @@ package com.company.employee_management_system.controller;
 
 
 import java.util.List;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,4 +36,10 @@ public class EmployeeController {
     public List<employee> getAllEmployees() {
         return service.getAllEmployees();
     }
+@GetMapping("/{id}")
+public employee getEmployeeById(@PathVariable Long id) {
+
+    return service.getEmployeeById(id);
+}
+   
 }
